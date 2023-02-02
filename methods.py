@@ -2,6 +2,7 @@ import requests
 import numpy as np
 import pandas as pd
 import json
+import variables
 
 from bs4 import BeautifulSoup
 
@@ -246,42 +247,30 @@ def get_home_venues():
 
     # print(table_datasets[-2:])
     table_datasets = np.array(table_datasets)
-    # print(table_datasets[:, 4])
     table_datasets[:, 4] = [i[4].replace( ' ', '') for i in table_datasets]
-    length_table = len(table_datasets)
-    # print(length_table)
-    # print(table_datasets[:, 4])
+    # length_table = len(table_datasets)
     
     # print(*table_datasets[:, 4], sep = '\n')
     home_venues = dict()
 
-    problematic_team_names = {
-        "NorthCarolinamen": "NorthCarolina",
-        "NorthCarolinaStatemen": "NorthCarolinaState",
-
-    }
-
     for i in table_datasets:
+        team_name = i[4]
+
+        # First check if in problematic team names dictionary (i.e. the team name is not matching the conventional standards)
+        if team_name in variables.problematic_team_names:
+            team_name = variables.problematic_team_names[team_name]
         
         # table_datasets, handle multiple arenas (dictionary key already present)
-        if i[4] in home_venues:
-            string = i[1] + "+" + home_venues[i[4]]
-            home_venues[i[4]] = string
-            # print(string)
-            # print(home_venues[i[4] + " 1"][0])
-            # home_venues[i[4] + " " + (str)(home_venues[i[4] + " 1"][0] + 1)] = (1, i[2], i[1])
-            # home_venues[i[4] + " 1"] = (home_venues[i[4] + " 1"][0] + 1, home_venues[i[4] + " 1"][1], home_venues[i[4] + " 1"][2]) # Update count 
-            # print(home_venues[i[4]])
-            # print(i)
+        if team_name in home_venues:
+            string = i[1] + "+" + home_venues[team_name]
+            home_venues[team_name] = string
+            
         else:
-            home_venues[i[4]] = i[1]
-    # print(home_venues.items())
-    # print(len(home_venues))
-    # print(home_venues)
+            home_venues[team_name] = i[1]
 
     return home_venues
 
-# get_home_venues()
+get_home_venues()
 
 def get_all_teams(year):
     url = f"https://www.warrennolan.com/basketball/{year}/teams-az"
@@ -297,7 +286,7 @@ def get_all_teams(year):
 
     return teams
 
-get_all_teams("2022")
+# get_all_teams("2022")
 
 # Determine if game is home (0) or away (1) for team_name based on venues and game venue
 def determine_home_or_away(team_name, venues, game_venue):
@@ -391,20 +380,3 @@ def get_dataset_with_home_away(team, year, team_pairs):
 
 # Map of teams with home arenas: from https://en.wikipedia.org/wiki/List_of_NCAA_Division_I_basketball_arenas 
 
-home_venues_0 = {
-    'BostonCollege': 'Conte Forum',
-    'Clemson': 'Littlejohn Coliseum',
-    'Duke': 'Cameron Indoor Stadium',
-    'Florida State': 'Donald L. Tucker Civic Center',
-    'Georgia Tech': 'Hank McCamish Pavilion',
-    'Louisville': 'KFC Yum! Center',
-    'Miami': 'Watsco Center',
-    'North Carolina': 'Dean Smith Center',
-    'North Carolina State': 'PNC Arena',
-    'Notre Dame': 'Edmund P. Joyce Center',
-    'Pittsburgh': 'Petersen Events Center',
-    'Syracuse': 'JMA Wireless Dome',
-    'Virginia': 'John Paul Jones Arena',
-    'Virginia Tech': 'Cassell Coliseum',
-    'Wake Forest': 'Lawrence Joel Veterans Memorial Coliseum'
-}

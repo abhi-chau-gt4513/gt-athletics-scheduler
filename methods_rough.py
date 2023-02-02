@@ -281,7 +281,7 @@ def get_home_venues():
 
     return home_venues
 
-get_home_venues()
+# get_home_venues()
 
 def get_all_teams():
     soup = get_content("https://en.wikipedia.org/wiki/List_of_NCAA_Division_I_basketball_arenas")
@@ -323,6 +323,8 @@ def get_all_teams():
         teams.append(i[4])
 
     return teams
+
+get_all_teams()
 
 # Determine if game is home (0) or away (1) for team_name based on venues and game venue
 def determine_home_or_away(team_name, venues, game_venue):
