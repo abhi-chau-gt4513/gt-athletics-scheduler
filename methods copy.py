@@ -252,7 +252,7 @@ def get_home_venues():
     # print(length_table)
     # print(table_datasets[:, 4])
     
-    # print(*table_datasets[:, 4], sep = '\n')
+    print(*table_datasets[:, 4], sep = '\n')
     home_venues = dict()
 
     problematic_team_names = {
@@ -263,7 +263,7 @@ def get_home_venues():
 
     for i in table_datasets:
         
-        # table_datasets, handle multiple arenas (dictionary key already present)
+        # table_datasets
         if i[4] in home_venues:
             string = i[1] + "+" + home_venues[i[4]]
             home_venues[i[4]] = string
@@ -281,23 +281,48 @@ def get_home_venues():
 
     return home_venues
 
-# get_home_venues()
+get_home_venues()
 
-def get_all_teams(year):
-    url = f"https://www.warrennolan.com/basketball/{year}/teams-az"
-    soup = get_content(url)
+def get_all_teams():
+    soup = get_content("https://en.wikipedia.org/wiki/List_of_NCAA_Division_I_basketball_arenas")
+
+    headers = None
+
+    soup.find_all("table")
+    counter = 0
+    table_datasets = []
+    for elem in soup.find_all("table"):
+        # Only want the first table with class attribute
+        if elem.has_attr("class") and counter == 0:
+
+            # Get all the headers
+            headers = elem.find_all("th")
+            
+            if len(headers) > 0:
+
+                # Get all table data html objects
+                body = elem.find_all("td")
+                length = len(body)
+
+                # List comprehension for just getting the team name, arena, and arena location
+                entries = [[body[k * 8 + i].text.replace('\n', '') if i % 8 == 1 or i % 8 == 2 or i % 8 == 4 else None for i in range(len(body[k * 8 : (k + 1) * 8]))] for k in range((int) (length / 8))]
+                counter += 1
+                [table_datasets.append(i) for i in entries]
+        
+        
+
+    # print(table_datasets[-2:])
+    table_datasets = np.array(table_datasets)
+    # print(table_datasets[:, 4])
+    table_datasets[:, 4] = [i[4] for i in table_datasets]
+    length_table = len(table_datasets)
 
     teams = []
 
-    table_datasets = []
-    for elem in soup.find_all("div"):
-        if elem.has_attr("class") and elem["class"][0] == "name-subcontainer":
-            team_name = elem.text.replace(" ", "-").replace("(", "").replace(")", "").replace("&", "").replace("'", "").replace(".", "").replace("--", "-")
-            teams.append(team_name)
+    for i in table_datasets:
+        teams.append(i[4])
 
     return teams
-
-get_all_teams("2022")
 
 # Determine if game is home (0) or away (1) for team_name based on venues and game venue
 def determine_home_or_away(team_name, venues, game_venue):
@@ -387,7 +412,7 @@ def get_dataset_with_home_away(team, year, team_pairs):
 # print(get_stats("Iona", '2022'))
 # print("Hello")
 # get_home_venues()
-# print(json.dumps(get_home_venues(), indent=4))
+print(json.dumps(get_home_venues(), indent=4))
 
 # Map of teams with home arenas: from https://en.wikipedia.org/wiki/List_of_NCAA_Division_I_basketball_arenas 
 
