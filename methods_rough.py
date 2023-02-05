@@ -217,7 +217,7 @@ def stat_formatter(col_names, vals):
     return new_stats
 
 def get_home_venues():
-    soup = get_content("https://en.wikipedia.org/wiki/List_of_NCAA_Division_I_basketball_arenas")
+    soup = get_content("https://en.wikiedia.org/wiki/List_of_NCAA_Division_I_basketball_arenas")
 
     headers = None
 

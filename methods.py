@@ -6,6 +6,9 @@ import variables
 
 from bs4 import BeautifulSoup
 
+# Debug method for invalid url notification messages
+def get_url(team, year):
+    return f"https://www.warrennolan.com/basketball/{year}/schedule/{team}"
 
 # Original method for scraping the html content based on url provided
 def get_content(url):
@@ -84,8 +87,9 @@ def get_match_locations(team_name, year):
         arena = ""
         count = 0
         for i in team_schedule[k].find_all("span"):
-            if i.has_attr("class") and ("team-schedule__info" in i["class"][0]
-                                    and "tv" not in i["class"][0]):
+            print("team-schedule__info" in i["class"], i["class"])
+            if i.has_attr("class") and ("team-schedule__info" in i["class"]
+                                    and "tv" not in i["class"]):
                 if (count % 2 == 0):
                     location = i.text
                 else:
@@ -193,20 +197,27 @@ def stat_formatter(col_names, vals):
             t1_name = val[0].replace(" ", "")
             t2_name = val[1].replace(" ", "")
             new_stats["Team1_Team2"] = t1_name + "_" + t2_name
+            # print(t1_name, t2_name)
 
         elif col in points:
             new_stats["Team1_" + col] = int(val[0])
             new_stats["Team2_" + col] = int(val[1])
             
         elif col in percents:
-            new_stats["Team1_" + col] = float(val[0][:-1])
-            new_stats["Team2_" + col] = float(val[1][:-1])
+            new_stats["Team1_" + col] = float(val[0][:-1]) if val[0][:-1] != "" else 0.00
+            new_stats["Team2_" + col] = float(val[1][:-1]) if val[1][:-1] != "" else 0.00
 
         else:
             v1 = val[0].split("-")
             v2 = val[1].split("-")
-            scored1, attempts1, pct1 = int(v1[0]), int(v1[1][:2]), float(v1[1][2:-1])
-            scored2, attempts2, pct2 = int(v2[0]), int(v2[1][:2]), float(v2[1][2:-1])
+            # print(v1[1][2:-1], v2[1][2:-1])
+
+            # Fixes to the data type conversion issue when recording cancelled matches
+            scored1, attempts1,  = int(v1[0]), int(v1[1][:2])
+            pct1 = float(v1[1][2:-1]) if v1[1][2:-1] != "-" and v1[1][2:-1] != "" else 0.00
+            scored2, attempts2 = int(v2[0]), int(v2[1][:2])
+            pct2 = float(v2[1][2:-1]) if v2[1][2:-1] != "-" and v2[1][2:-1] != ""  else 0.00
+
             
             new_stats["Team1_" + col + "_Scored"] = scored1
             new_stats["Team1_" + col + "_Attempted"] = attempts1
@@ -291,7 +302,7 @@ def get_all_teams(year):
 # Determine if game is home (0) or away (1) for team_name based on venues and game venue
 def determine_home_or_away(team_name, venues, game_venue):
     for i in venues:
-        if i == game_venue:
+        if i in game_venue or game_venue in i: # Similar enough
             return 0
     
     return 1
@@ -309,6 +320,8 @@ def get_dataset(team, year, team_pairs):
         match_no = 0
         for table in stats_tables:
             # get table headers and data
+            
+
             rows = table.find_all("tr")
             headers = rows[0].find_all("th")
             team_1_stats = rows[1].find_all("td")
@@ -334,6 +347,9 @@ def get_dataset(team, year, team_pairs):
             match_no += 1
 
         df = pd.DataFrame(matches)
+        df['Year'] = year               # Get year
+
+
 
         # df.drop(0)
         return df
