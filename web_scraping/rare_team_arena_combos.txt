@@ -1,0 +1,348 @@
+AbileneChristian Orleans Arena
+StephenF.Austin Orleans Arena
+SeattleUniversity Orleans Arena
+NewMexicoState Orleans Arena
+Troy Ocean Center
+AbileneChristian Ocean Center
+SouthDakota Sanford Pentagon
+AirForce Ocean Center
+Bethune-Cookman Ocean Center
+UtahState Thomas & Mack Center
+Akron Hertz Arena
+Evansville Hertz Arena
+Akron Rocket Mortgage FieldHouse
+Toledo Rocket Mortgage FieldHouse
+KentState Rocket Mortgage FieldHouse
+UCLA Moda Center
+Iona HP Field House
+Drake HP Field House
+Alabama HP Field House
+Gonzaga Climate Pledge Arena
+Alabama Legacy Arena at BJCC
+Alabama Amelie Arena
+Alabama Viejas Arena
+FloridaA&M Bartow Arena
+AlcornState Bartow Arena
+AlabamaState Mitchell Center
+Albany McBrayer Arena
+Niagara KeyBank Center
+American Willett Hall
+AppalachianState Hertz Arena
+Vermont Hertz Arena
+AppalachianState Pensacola Bay Center
+Arizona T-Mobile Arena
+Arizona Viejas Arena
+Arizona AT&T Center
+Baylor Imperial Arena
+Syracuse Imperial Arena
+Loyola-Chicago Imperial Arena
+ArizonaState T-Mobile Arena
+KansasState T-Mobile Center
+Arkansas T-Mobile Center
+Oklahoma BOK Center
+Arkansas Simmons Bank Arena
+Arkansas Amelie Arena
+Arkansas KeyBank Center
+Gonzaga Chase Center
+Duke Chase Center
+ArkansasState Pensacola Bay Center
+GeorgiaState Pensacola Bay Center
+Army Cameron Hall
+Auburn Imperial Arena
+Auburn State Farm Arena
+Auburn Amelie Arena
+Auburn Bon Secours Wellness Arena
+AustinPeay Ford Center
+FIU McArthur Center
+BallState McArthur Center
+UMass McArthur Center
+Ohio Rocket Mortgage FieldHouse
+VCU Imperial Arena
+MichiganState Imperial Arena
+Baylor T-Mobile Center
+Baylor Dickies Arena
+Baylor Gainbridge Fieldhouse
+Bellarmine T-Mobile Arena
+Bellarmine KFC Yum! Center
+Belmont HP Field House
+Belmont Ford Center
+Liberty Ocean Center
+NorthCarolinaState Reynolds Coliseum
+BoiseState TD Arena
+Temple TD Arena
+OleMiss TD Arena
+WashingtonState Spokane Arena
+BoiseState Thomas & Mack Center
+BoiseState Moda Center
+BostonCollege Ocean Center
+RhodeIsland Ocean Center
+Pittsburgh Barclays Center
+WakeForest Barclays Center
+Miami(FL) Barclays Center
+NorthernIllinois UNF Arena
+SamHoustonState UNF Arena
+BostonUniversity Ocean Center
+BowlingGreen Suncoast Credit Union Arena
+ColoradoState UVI Sports & Fitness Center
+Brown UVI Sports & Fitness Center
+Duquesne UVI Sports & Fitness Center
+SamHoustonState Don Haskins Center
+Loyola-Chicago Enterprise Center
+Creighton UVI Sports & Fitness Center
+Colorado UVI Sports & Fitness Center
+HolyCross Ocean Center
+WrightState University of Dayton Arena
+Mercer Hard Rock Hotel Riviera Maya
+Bucknell Hard Rock Hotel Riviera Maya
+Buffalo Hard Rock Hotel Riviera Maya
+IllinoisState Hard Rock Hotel Riviera Maya
+Canisius KeyBank Center
+Houston Michelob Ultra Arena
+Butler Michelob Ultra Arena
+Butler Gainbridge Fieldhouse
+Villanova Wells Fargo Center
+Xavier Madison Square Garden
+Providence Madison Square Garden
+Oregon Moda Center
+Creighton Sanford Pentagon
+SouthFlorida Stan Sheriff Center
+Vanderbilt Stan Sheriff Center
+BYU Stan Sheriff Center
+BYU Orleans Arena
+SanFrancisco Orleans Arena
+CalPoly JSerra Pavillion
+UCDavis Dollar Loan Center
+CalStateNorthridge Dollar Loan Center
+LongBeachState Dollar Loan Center
+UTRGV J. Lawrence Walkup Skydome
+CalStateFullerton Dollar Loan Center
+Duke Bon Secours Wellness Arena
+California Suncoast Credit Union Arena
+WashingtonState T-Mobile Arena
+CaliforniaBaptist Orleans Arena
+SamHoustonState Orleans Arena
+MiddleTennessee Ocean Center
+Campbell Cameron Indoor Stadium
+Campbell Bojangles Coliseum
+Gardner-Webb Bojangles Coliseum
+Fairfield Boardwalk Hall
+CentralArkansas Lakefront Arena
+CentralConnecticut Mohegan Sun Arena
+UMass-Lowell Mohegan Sun Arena
+CentralMichigan T-Mobile Arena
+RhodeIsland Entertainment & Sports Arena
+Hofstra Entertainment & Sports Arena
+UNCW Entertainment & Sports Arena
+CharlestonSouthern McAlister Field House
+UNCAsheville Bojangles Coliseum
+SouthCarolinaUpstate Bojangles Coliseum
+Toledo Baha Mar Convention Center
+Charlotte Baha Mar Convention Center
+Charlotte Spectrum Center
+Charlotte Ford Center at the Star
+Chattanooga Harrah's Cherokee Center
+Illinois PPG Paints Arena
+UtahValley Orleans Arena
+Cincinnati T-Mobile Center
+Cincinnati Dickies Arena
+Houston Dickies Arena
+Clemson TD Arena
+WestVirginia TD Arena
+Clemson State Farm Arena
+Clemson Barclays Center
+VirginiaTech Barclays Center
+ClevelandState Indiana Farmers Coliseum
+Valparaiso Baha Mar Convention Center
+CoastalCarolina Pensacola Bay Center
+Wisconsin Fiserv Forum
+Colorado T-Mobile Arena
+Northeastern UVI Sports & Fitness Center
+ColoradoState Dickies Arena
+Tulsa Dickies Arena
+ColoradoState Thomas & Mack Center
+ColoradoState Gainbridge Fieldhouse
+Connecticut Imperial Arena
+Connecticut Prudential Center
+SaintJohn's Madison Square Garden
+Connecticut Madison Square Garden
+Villanova Madison Square Garden
+Connecticut KeyBank Center
+Howard Norfolk Scope Arena
+NorthCarolinaCentral Norfolk Scope Arena
+NorfolkState Norfolk Scope Arena
+Princeton Lavietes Pavillion
+SouthernIllinois UVI Sports & Fitness Center
+Creighton Madison Square Garden
+SanDiegoState Dickies Arena
+Kansas Dickies Arena
+SanFrancisco Chase Center
+NewMexicoState The HTC Center
+Penn The HTC Center
+EastCarolina The HTC Center
+Davidson Capital One Arena
+MichiganState Bon Secours Wellness Arena
+Miami(FL) HP Field House
+Kansas HP Field House
+Dayton Capital One Arena
+Fordham Hertz Arena
+Oakland Hertz Arena
+Iona UBS Arena
+Drexel Entertainment & Sports Arena
+Towson Entertainment & Sports Arena
+Villanova PPG Paints Arena
+DelawareState Prudential Center
+Denver UTSA Convocation Center
+TexasA&M-CorpusChristi UTSA Convocation Center
+NorthDakotaState Denny Sanford Premier Center
+DixieState Matadome
+Drake Enterprise Center
+MissouriState Enterprise Center
+Drake Ocean Center
+UNCW Ocean Center
+Drexel Baha Mar Convention Center
+JacksonvilleState Baha Mar Convention Center
+Duke Madison Square Garden
+Duke T-Mobile Arena
+Duke Barclays Center
+Duke Caesars Superdome
+Duquesne LeBron James Arena
+RhodeIsland Capital One Arena
+OldDominion The HTC Center
+EastCarolina Spectrum Center
+EastTennesseeState Moe Kent Family Field House
+KentState Moe Kent Family Field House
+EastTennesseeState Harrah's Cherokee Center
+EasternWashington Matadome
+EasternWashington Idaho Central Arena
+NorthernColorado Idaho Central Arena
+Elon TD Arena
+Rice Hertz Arena
+Valparaiso Enterprise Center
+SaintPeter's Boardwalk Hall
+FAU Ford Center at the Star
+UAB Ford Center at the Star
+NorthernColorado Ocean Center
+GreenBay McArthur Center
+FIU Ford Center at the Star
+OhioState Suncoast Credit Union Arena
+Maryland Barclays Center
+Florida FLA Live Arena
+TexasA&M Amelie Arena
+Loyola-Marymount UNF Arena
+Missouri UNF Arena
+SouthCarolina Rock Hill Sports & Event Center
+FloridaState FLA Live Arena
+FloridaState Barclays Center
+Fordham Barclays Center
+Fordham Capital One Arena
+Pepperdine JSerra Pavillion
+SantaClara JSerra Pavillion
+FresnoState Thomas & Mack Center
+SanDiegoState Thomas & Mack Center
+Furman Harrah's Cherokee Center
+NorthCarolinaCentral Paul Porter Arena
+Winthrop Bojangles Coliseum
+Washington Sanford Pentagon
+GeorgeMason Sanford Pentagon
+SouthDakotaState Sanford Pentagon
+GeorgeWashington Moe Kent Family Field House
+GeorgeWashington Capital One Arena
+SanDiegoState Anaheim Convention Center
+Georgetown Anaheim Convention Center
+SetonHall Madison Square Garden
+Georgia Prudential Center
+Northwestern Prudential Center
+Vanderbilt Amelie Arena
+GeorgiaSouthern Jerry Richardson Indoor Stadium
+William&Mary Nido and Mariana Qubein Arena
+Gonzaga Moda Center
+GeorgiaTech State Farm Arena
+USC Footprint Center
+Louisville Barclays Center
+UCLA T-Mobile Arena
+Gonzaga Footprint Center
+Gonzaga Orleans Arena
+MorganState Footprint Center
+GramblingState Footprint Center
+JacksonState Mitchell Center
+Southern Bartow Arena
+TexasSouthern Bartow Arena
+GrandCanyon Footprint Center
+GrandCanyon Orleans Arena
+UNCG McArthur Center
+WeberState McArthur Center
+NorfolkState Footprint Center
+Hampton Footprint Center
+HighPoint Bojangles Coliseum
+UNLV Michelob Ultra Arena
+Hawaii Orleans Arena
+SouthAlabama Orleans Arena
+Hawaii Dollar Loan Center
+SouthCarolinaState Rock Hill Sports & Event Center
+Oregon Michelob Ultra Arena
+Houston PPG Paints Arena
+Villanova AT&T Center
+HoustonBaptist Leonard E. Merrell Center
+NewOrleans Leonard E. Merrell Center
+IncarnateWord Leonard E. Merrell Center
+TexasA&M-CorpusChristi Leonard E. Merrell Center
+Howard Prudential Center
+Howard Wolstein Center
+UtahValley JSerra Pavillion
+SacramentoState Idaho Central Arena
+PortlandState Idaho Central Arena
+Illinois Enterprise Center
+Illinois Bankers Life Fieldhouse
+SaintLouis Hard Rock Hotel Riviera Maya
+IllinoisState Enterprise Center
+NorthernIowa Enterprise Center
+IncarnateWord South Padre Island Convention Center
+NotreDame Gainbridge Fieldhouse
+Michigan Bankers Life Fieldhouse
+Iowa Bankers Life Fieldhouse
+Wyoming University of Dayton Arena
+SaintMary'sCollege Moda Center
+IndianaState The HTC Center
+NorthAlabama HP Field House
+Iona Barclays Center
+Iona Boardwalk Hall
+Iowa Sanford Pentagon
+Rutgers Bankers Life Fieldhouse
+Purdue Bankers Life Fieldhouse
+Iowa KeyBank Center
+IowaState Barclays Center
+Memphis Barclays Center
+TexasTech T-Mobile Center
+LSU Fiserv Forum
+Miami(FL) United Center
+JamesMadison Moe Kent Family Field House
+MichiganState Madison Square Garden
+SaintJohn's UBS Arena
+Kansas T-Mobile Center
+Kansas United Center
+Kansas Caesars Superdome
+WichitaState Intrust Bank Arena
+Kentucky T-Mobile Arena
+Kentucky Amelie Arena
+Tennessee Amelie Arena
+Kentucky Gainbridge Fieldhouse
+LaSalle The Palestra
+LaSalle Capital One Arena
+SaintLouis Capital One Arena
+Liberty HP Field House
+StephenF.Austin Dickies Arena
+NorthernIowa Stan Sheriff Center
+Stanford Stan Sheriff Center
+SouthCarolinaState TD Arena
+Lipscomb TD Arena
+LittleRock UNF Arena
+SouthAlabama Pensacola Bay Center
+Troy Pensacola Bay Center
+MissouriState Moe Kent Family Field House
+MurrayState Moe Kent Family Field House
+WrightState Moe Kent Family Field House
+Longwood Bojangles Coliseum
+Tennessee Gainbridge Fieldhouse
+Louisiana Pensacola Bay Center
+TexasState Pensacola Bay Center
+LouisianaTech Brookshire Grocery Arena
